@@ -70,7 +70,7 @@ export default function Home() {
     ]
     const { toggleSidebar } = useSidebar()
   return (
-      <Card className={'flex-1 border-0 shadow m-2 overflow-hidden'}>
+      <Card className={'flex-1 h-full border-0 shadow m-2 overflow-hidden'}>
           <Tabs defaultValue="home" className="mt-1 w-full">
               <TabsList className="w-full justify-start rounded-none border-b my-2 border-slate-200 ">
                   <TabsTrigger value="home"
@@ -119,7 +119,7 @@ export default function Home() {
                   </div>
               </TabsList>
               <TabsContent value="home" className="w-full">
-                  <div className="flex items-center justify-center mt-10 flex-col">
+                  <div className="flex items-center justify-center mt-2 flex-col">
                       <div className={'flex justify-between w-1/2'}>
                           <h2 className="text-2xl font-bold mb-2">Single Pages</h2>
                           <div className={'flex justify-between'}>
@@ -130,13 +130,13 @@ export default function Home() {
                                       className={'rounded-r-[10px] border-gray-200'}>Next<CircleArrowRight/></Button>
                           </div>
                       </div>
-                      <div className={'flex justify-start w-1/2 mt-[12rem]'}>
+                      <div className={'flex justify-start w-1/2 mt-[10rem]'}>
                           <div><h1 className={'text-5xl font-bold'}>Chain of Thought Empowers</h1><br/>
                               <h1 className={'text-5xl font-bold'}>Transformers to Solve Inherently</h1><br/>
                               <h1 className={'text-5xl font-bold'}>Serial Problems</h1><br/>
                           </div>
                       </div>
-                      <div className={'flex justify-start w-1/2 mt-[12rem]'}>
+                      <div className={'flex justify-start w-1/2 mt-[10rem]'}>
                           <Button variant={'default'} className={'rounded-[10px] bg-black text-white'}><Bookmark/>Collect(120)</Button>
                           <Button variant={'default'} className={'ml-2 rounded-[10px] bg-blue-500 text-white'}><Share/>share</Button>
                           <Button variant={'outline'} className={'ml-2 rounded-l-[10px] border-gray-200'}><ThumbsUp
@@ -146,7 +146,7 @@ export default function Home() {
                               className={'text-gray-500 '}/></Button>
                       </div>
                   </div>
-                  <div className="mt-[12rem] border-t border-gray-200"></div>
+                  <div className="mt-[4rem] border-t border-gray-200"></div>
                   <Pagination className={'justify-start'}>
                       <PaginationContent>
                           Pages
@@ -164,7 +164,7 @@ export default function Home() {
                   <div className={'flex justify-between gap-5 overflow-x-auto pb-10'}>
                       {cardList.map((item)=> {
                       return (
-                          <Card key={item.text} className={'w-52 ml-2 h-[10rem] shadow border-gray-200 mt-6'}>
+                          <Card key={item.text} className={'w-52 ml-2 h-[8rem] shadow border-gray-200 mt-6'}>
                               <CardContent className={'my-8'}>
                                   <p>Card Content Card ContentCard </p>
                               </CardContent>
